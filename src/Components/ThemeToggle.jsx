@@ -1,0 +1,4 @@
+"use client";
+import {useEffect,useState} from "react";
+import {Moon,Sun} from "lucide-react";
+export default function ThemeToggle(){const[dark,setDark]=useState(false);useEffect(()=>{const saved=localStorage.getItem("aziz-theme");const prefers=window.matchMedia?.("(prefers-color-scheme: dark)").matches;const value=saved?saved==="dark":(document.documentElement.dataset.defaultTheme==="dark"||(document.documentElement.dataset.defaultTheme!=="light"&&prefers));setDark(value);document.documentElement.dataset.theme=value?"dark":"light"},[]);function toggle(){const next=!dark;setDark(next);document.documentElement.dataset.theme=next?"dark":"light";localStorage.setItem("aziz-theme",next?"dark":"light")}return <button type="button" className="theme-toggle" onClick={toggle} aria-label={`Switch to ${dark?"light":"dark"} mode`} title={`Switch to ${dark?"light":"dark"} mode`}>{dark?<Sun size={17}/>:<Moon size={17}/>}</button>}

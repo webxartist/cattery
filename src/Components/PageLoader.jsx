@@ -1,0 +1,4 @@
+"use client";
+import {useEffect,useState} from "react";
+import {PawPrint} from "lucide-react";
+export default function PageLoader({enabled=true}){const[show,setShow]=useState(false);useEffect(()=>{try{if(!sessionStorage.getItem("aziz-intro-seen")){setShow(true);const t=setTimeout(()=>{setShow(false);sessionStorage.setItem("aziz-intro-seen","1")},2100);return()=>clearTimeout(t)}}catch{}},[]);if(!enabled||!show)return null;return <div className="cat-intro-loader" role="status" aria-label="Welcome to Aziz Felines"><div className="loader-orbit"><span className="loader-paw paw-one">🐾</span><span className="loader-paw paw-two">✦</span><span className="loader-cat">🐈</span></div><div className="loader-wordmark">AZIZ <i>FELINES</i></div><p>A little more love for every paw</p><div className="loader-line"><span/></div></div>}
