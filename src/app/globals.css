@@ -2361,6 +2361,14 @@ html[data-theme="dark"] .enquiry-form {
   background: #1b2b22;
   border-color: #36513b;
 }
+
+html[data-theme="dark"] .premium-header .mobile-toggle {
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  color: #ffffff;
+}
+
 html[data-theme="dark"] .enquiry-form label,
 html[data-theme="dark"] .enquiry-form h3 {
   color: #e7efe6;
@@ -2524,6 +2532,7 @@ select {
   padding-right: 18%;
   animation: offerReveal 0.7s ease both;
 }
+
 .offer-controls {
   position: absolute;
   right: 6%;
