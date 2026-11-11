@@ -2363,9 +2363,6 @@ html[data-theme="dark"] .enquiry-form {
 }
 
 html[data-theme="dark"] .premium-header .mobile-toggle {
-  display: grid;
-  place-items: center;
-  margin-left: auto;
   color: #ffffff;
 }
 
