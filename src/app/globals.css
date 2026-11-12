@@ -2311,18 +2311,20 @@ html[data-theme="dark"] .nav-wrap {
   border-color: #294638;
 }
 html[data-theme="dark"] .brand b {
-  color: #edf4eb;
+  color: white;
 }
 html[data-theme="dark"] .brand small {
-  color: #294638;
+  color: white;
 }
 html[data-theme="dark"] .nav-links > a {
-  color: #d4e3d5;
-  background-color: #294638;
+  color: white;
   border-radius: 35px;
   text-align: center;
 }
 html[data-theme="dark"] .nav-links {
+  background-color: #0b241b;
+  padding: 5px 20px;
+  border-radius: 35px;
 }
 html[data-theme="dark"] .theme-toggle {
   background: linear-gradient(145deg, #254b38, #122c21);
